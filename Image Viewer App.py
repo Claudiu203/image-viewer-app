@@ -4,14 +4,13 @@ import os
 
 root = Tk()
 root.title("Image App Viewer")
-root.iconbitmap("D:\Filme\Fast and Furios Trilogy\ICO\Fast & Furious Collection.ico")
 root.geometry("1000x800")
 
 #Getting and Resizing Images
 
 raw_image_list = []
 
-basepath = 'E:\programare\Python\Image Viewer App\Image'
+basepath = 'Enter folder path'
 for item in os.listdir(basepath):
     if os.path.isfile(os.path.join(basepath,item)):
         if '.jpg' or '.png' in item:
